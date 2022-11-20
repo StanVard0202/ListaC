@@ -1,7 +1,7 @@
 const table = document.querySelector("#table")
 const width = window.innerWidth
 
-const requestURL = "https://raw.githubusercontent.com/StanVard0202/ListaC/Database/data.json"
+const requestURL = "https://raw.githubusercontent.com/StanVard0202/ListaC/Database/jogos.json"
 const request = new Request(requestURL)
 
 window.addEventListener("load", get_data(true))
