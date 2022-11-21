@@ -84,8 +84,7 @@ div.equipas{
   flex-wrap: wrap;
   flex-flow: wrap;
   font-size: 20px;
-  grid-auto-rows: 15vw;
-  grid-auto-columns: auto;
+  justify-content: center;
   column-gap: 20px;
 }
 
@@ -105,7 +104,8 @@ div.geral{
   position: relative;
   height: auto;
   padding: 10px;
-  
+  margin-bottom: 10px;
+  text-align: center;
   min-width: min-content;
   max-width: fit-content;
 
