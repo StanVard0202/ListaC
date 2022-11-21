@@ -26,11 +26,11 @@ function print_data(d){
     var html = ""
     for(var i=0;i<d.length;i++){
         html+="<tr>"
-        html+="<td>"+ d[i]["name"] +"</td>"
-        html+="<td>"+ d[i]["vitorias"] +"</td>"
-        html+="<td>"+ d[i]["empates"] +"</td>"
-        html+="<td>"+ d[i]["derrotas"] +"</td>"
-        html+="<td>"+ pontos(d[i]) +"</td>"
+        html+="<td class='name'>"+ d[i]["name"] +"</td>"
+        html+="<td class='vitoria'>"+ d[i]["vitorias"] +"</td>"
+        html+="<td class='empate'>"+ d[i]["empates"] +"</td>"
+        html+="<td class='derrota'>"+ d[i]["derrotas"] +"</td>"
+        html+="<td class='pontos'>"+ pontos(d[i]) +"</td>"
         html+="<tr>"
     }
     table.innerHTML = html

@@ -2,6 +2,16 @@
   --spacing: 10px;
   --cor-clara: #fff4e2;
   --cor-escura: #c09745;
+  --full: 0
+}
+
+@media only screen and (max-width: 650px){
+  .vitoria, .empate, .derrota{
+    display: none;
+  }
+  th, td, table{
+    width: min-content;
+  }
 }
 
 *{
@@ -45,13 +55,6 @@ th{
   font-size: 30px;
 }
 
-p.direitos{
-  position: absolute;
-  /*color: var(--cor-escura);*/
-  margin-top: 0;
-  top: 2px;
-  right: var(--spacing);
-}
 
 div.info{
   border: 2px solid var(--cor-escura);
@@ -122,5 +125,7 @@ div.geral > ul{
   margin-bottom: 10px;
   
 }
+
+
 
 
