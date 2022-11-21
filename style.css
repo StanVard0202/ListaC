@@ -81,6 +81,8 @@ div.equipas{
   border: .75px solid var(--cor-escura);
   border-radius: 7.5px;
   */
+  flex-wrap: wrap;
+  flex-flow: wrap;
   font-size: 20px;
   grid-auto-rows: 15vw;
   grid-auto-columns: auto;
@@ -102,7 +104,11 @@ p.ano{
 div.geral{
   position: relative;
   height: auto;
-  width: 15vw;
+  padding: 10px;
+  
+  min-width: min-content;
+  max-width: fit-content;
+
 
   overflow: hidden;
   border: 1px solid var(--cor-escura);
@@ -116,4 +122,5 @@ div.geral > ul{
   margin-bottom: 10px;
   
 }
+
 
