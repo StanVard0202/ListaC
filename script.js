@@ -5,18 +5,29 @@ const request_equipas = new Request(requestURL_equipas)
 
 const div = document.querySelector("#equipas")
 const table = document.querySelector("#table")
+const alert_div = document.querySelector(".alert")
 const width = window.innerWidth
 
 let handler = 0
 
-window.addEventListener("load", get_data())
+window.addEventListener("load", get_data)
+window.addEventListener("resize", resize)
 
 if(handler >= 2){
-    setTimeout(get_data(),300000)
+    setTimeout(get_data(),1000)
+}
+
+function resize(){
+    if(width <= 650){
+        alert_div.innerHTML = "Para ver mais informações vire o dispositivo"
+    }else{
+        alert_div.innerHTML = ""
+    }
 }
 
 
 function get_data(){
+    resize()
     fetch(request_jogos).then((response) => response.json()).then((data) => print_data(data))
     fetch(request_equipas).then((response) => response.json()).then((data) => print_equipas(data))
     handler++
